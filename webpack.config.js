@@ -6,6 +6,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  devServer: {
+    disableHostCheck: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: '!!html-loader!templates/index.html'
